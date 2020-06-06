@@ -19,7 +19,7 @@ def screenshotmatic (endtime, step):
         if (now == time_next_screenshot):
             print('sacar captura')
             screenshot = pyautogui.screenshot()
-            screenshot.save("D:\ cap" + str(number_of_cap) + ".png")
+            screenshot.save("D:\cap" + str(number_of_cap) + ".png")
             time_next_screenshot = add_delta (now, step)
             number_of_cap += 1
             print(time_next_screenshot)
